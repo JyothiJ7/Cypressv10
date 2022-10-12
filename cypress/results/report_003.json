@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-10T09:47:10.899Z",
+    "end": "2022-10-10T09:47:17.667Z",
+    "duration": 6768,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7c2a94a0-e856-4242-a962-6563bfa5897b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\framedemospec.spec.cy.js",
+      "file": "cypress\\e2e\\framedemospec.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "700356d1-ff3b-47f1-bcab-9f54db3c6638",
+          "title": "Iframe Test Case",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "iframe.test",
+              "fullTitle": "Iframe Test Case iframe.test",
+              "timedOut": null,
+              "duration": 4289,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('formUrl'));\niframeselect.clickframe();\niframeselect.clickIframe();\niframeselect.IframeText();",
+              "err": {},
+              "uuid": "f402950c-d485-46ad-bd6a-ef7ee4ddee0c",
+              "parentUUID": "700356d1-ff3b-47f1-bcab-9f54db3c6638",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f402950c-d485-46ad-bd6a-ef7ee4ddee0c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4289,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

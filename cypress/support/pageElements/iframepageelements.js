@@ -1,0 +1,8 @@
+export const homepageframes = 'Frames'
+export const pageiframe = 'iFrame'
+export const textiframe = '#mce_0_ifr'
+export const validatetextiniframe ='An iFrame containing the TinyMCE WYSIWYG Editor'
+export const textiniframe1 = 'hi'
+export const textbold = 'button'
+export const textitalic = 'button'
+export const verifyBold = 'tox-tbtn tox-tbtn--enabled'

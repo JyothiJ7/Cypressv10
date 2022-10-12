@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-12T09:09:56.235Z",
+    "end": "2022-10-12T09:10:01.228Z",
+    "duration": 4993,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5a545681-4912-4d1f-b234-36393dceb031",
+      "title": "",
+      "fullFile": "cypress\\e2e\\formauthenticationdemo.spec.cy.js",
+      "file": "cypress\\e2e\\formauthenticationdemo.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4cf97f47-2e0f-416a-98cc-43bd5e6894a8",
+          "title": "formauthsuite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "form authentication.test",
+              "fullTitle": "formauthsuite form authentication.test",
+              "timedOut": null,
+              "duration": 3029,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('formUrl'));\nsubformauthpage.checkTitle();\nsubformauthpage.clickformauthlink();\nsubformauthpage.enterNameandPassword(this.Fdata.name, this.Fdata.password); // subformauthpage.clickLogin()",
+              "err": {},
+              "uuid": "f0ce8bee-a32b-4fcc-b263-69b42ac96913",
+              "parentUUID": "4cf97f47-2e0f-416a-98cc-43bd5e6894a8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f0ce8bee-a32b-4fcc-b263-69b42ac96913"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3029,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

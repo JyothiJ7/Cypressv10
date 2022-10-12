@@ -1,0 +1,31 @@
+{
+  "name": "cypressprojectone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dashboard": "cypress run --record --key  d591dff8-24c1-4248-afe7-dbeb699edc1e",
+    "pretest": "npm run clean:reports",
+    "singlefileexecution": "npx cypress run --spec cypress/e2e/dragandDropDemo.spec.cy.js",
+    "clean:reports": "if exist cypress\\results rmdir /s/q cypress\\results && cypress\\results mkdir cypress\\reports",
+    "scripts": "cypress run",
+    "combine-reports": "mochawesome-merge cypress/results/*,json > cypress/results/output,json",
+    "generate-reports": "marge cypress/results/output.json --reportDir ./ --inline",
+    "posttest": "npm run combine-reports && npm run generate-reports",
+    "test2": "npm run scripts || npm run posttest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.9.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-drag-drop": "^1.1.1"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.1",
+    "mocha": "^10.0.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1"
+  }
+}
