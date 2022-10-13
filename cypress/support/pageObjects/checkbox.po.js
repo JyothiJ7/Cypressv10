@@ -12,28 +12,23 @@ class Checkboxselect {
     clickcheckboxes() {
         cy.contains(checkboxpageelements.checkboxes).click()
     }
-    
-    //Selecting the CheckBox
+
+    // CheckBox1 functionality 
     firstcheckboxcheck() {
-        cy.get(checkboxpageelements.checkbox1).first().click()
+        cy.get(checkboxpageelements.checkbox1).should('be.visible')
+
+        cy.get(checkboxpageelements.checkbox1).first().check().should('be.checked')
+        cy.get(checkboxpageelements.checkbox1).first().uncheck().should('not.be.checked')
     }
 
-    //Validate whether the checkbox is checked or not 
-    validatethechecked() { 
-        cy.get(checkboxpageelements.checkbox1).should('be.checked')
-        cy.get(checkboxpageelements.checkbox2).should('be.checked')
-    }
-    // firstcheckboxuncheck(){
-    //     cy.get(checkboxpageelements.checkbox1).click()
-    // }
-    // secondcheckboxuncheck(){
-    //     cy.get(checkboxpageelements.checkbox2).click()
-    // }
-    
-    // validatetheunchecked(){
-    //     cy.get(checkboxpageelements.checkbox1).should('not.be.checked')
-    //     cy.get(checkboxpageelements.checkbox2).should('not.be.checked')
+    //CheckBox2 functionality 
+    secondcheckboxcheck() {
+        
+        cy.get(checkboxpageelements.checkbox2).should('be.visible')
 
-    // }
+        cy.get(checkboxpageelements.checkbox2).last().uncheck().should('not.be.checked')
+
+    }
+
 }
 export default Checkboxselect;

@@ -7,13 +7,11 @@ describe('checkbox Test Case', () => {
        cy.visit(Cypress.env('formUrl'))
 
 
-       checkboxselect. validatethetitle() 
+       checkboxselect.validatethetitle() 
        checkboxselect.clickcheckboxes()
        checkboxselect.firstcheckboxcheck()
-       checkboxselect.validatethechecked()
-      //  checkboxselect.firstcheckboxuncheck()
-      //  checkboxselect.secondcheckboxuncheck()
-      //  checkboxselect.validatetheunchecked()
+       checkboxselect.secondcheckboxcheck()
+      
 
 
       })
