@@ -8,7 +8,7 @@
     "dashboard": "cypress run --record --key  d591dff8-24c1-4248-afe7-dbeb699edc1e",
     "pretest": "npm run clean:reports",
     "singlefileexecution": "npx cypress run --spec cypress/e2e/dragandDropDemo.spec.cy.js",
-    "clean:reports": "if exist cypress\\results rmdir /s/q cypress\\results && cypress\\results mkdir cypress\\reports",
+    "clean:results": "if exist cypress\\results rmdir /s/q cypress\\results && cypress\\results mkdir cypress\\reports",
     "scripts": "cypress run",
     "combine-reports": "mochawesome-merge cypress/results/*,json > cypress/results/output,json",
     "generate-reports": "marge cypress/results/output.json --reportDir ./ --inline",
